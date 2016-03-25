@@ -2,8 +2,8 @@ angular.module('CardsAgainstAssembly')
   .controller('cardsController', ['$scope', function($scope){
 
   $scope.swapMe = function(){
-    console.log(this.card.answer);
-  }
+    console.log('click heard on ', this.card.question);
+  };
 
   var self = this;
   self.all = [
@@ -34,6 +34,10 @@ angular.module('CardsAgainstAssembly')
     {
       question: "Why are there so many songs about rainbows?",
       answer: "It's not that easy being green."
+    },
+    {
+      question: "Where do babies come from?",
+      answer: "Go ask your mother."
     }
   ]
 }]);
