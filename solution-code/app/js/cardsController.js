@@ -1,43 +1,72 @@
 angular.module('CardsAgainstAssembly')
-  .controller('cardsController', ['$scope', function($scope){
+  .controller('cardsController', function($scope){
 
   $scope.swapMe = function(){
-    console.log('click heard on ', this.card.question);
+    $scope.answerHidden = true;
+    if($scope.answerHidden === true){
+         return false;
+      } else {
+        $scope.answerHidden = false;
+        return true;
+      }
   };
 
   var self = this;
   self.all = [
     {
-      question: "What is Batman's guilty pleasure?", 
-      answer: "Robert Downey Jr."
+      cardId: 1,
+      question: "What is Superman's guilty pleasure?", 
+      answer: "Ben Affleck",
+      answerHidden: true
     },
     {
-      question: "I'm sorry professor, I couldn't complete my homework because _________.",
-      answer: "the dog ate my assignment!"
+      cardId: 2,
+      question: "I'm sorry I couldn't finish my homework...",
+      answer: "the dog ate my laptop!",
+      answerHidden: true
     },
     {
+      cardId: 3,
       question: "I get by with a little help from _________.",
-      answer: "John Cena!"
+      answer: "John Cena!",
+      answerHidden: true
     },
     {
+      cardId: 4,
       question: "_________ -- It's a trap!",
-      answer: "General Assembly?"
+      answer: "Monq's Chat room?",
+      answerHidden: true
     },
     {
+      cardId: 5,
       question: "The class field trip was completely ruined by _________.",
-      answer: "dragons"
+      answer: "the guy in a clown suit",
+      answerHidden: true
     },
     {
+      cardId: 6,
       question: "What's my secret power?",
-      answer: "Angular Baby!"
+      answer: "ngAnimate",
+      answerHidden: true
     },
     {
+      cardId: 7,
       question: "Why are there so many songs about rainbows?",
-      answer: "It's not that easy being green."
+      answer: "Leprachauns",
+      answerHidden: true
     },
     {
+      cardId: 8,
       question: "Where do babies come from?",
-      answer: "Go ask your mother."
+      answer: "Netflix and Chill",
+      answerHidden: true
+    },
+    {
+      cardId: 9,
+      question: "How do we do auth in Angular with Satellizer?",
+      answer: "I'm glad you asked.",
+      answerHidden: true
     }
-  ]
-}]);
+  ];
+});
+
