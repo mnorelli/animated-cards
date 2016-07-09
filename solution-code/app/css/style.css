@@ -58,7 +58,7 @@ h1:after, .card h6:after {
 
 .card-title {
   opacity: 1;
-  background: #231e1e;
+  /*background: #231e1e;*/
 }
 
 .card-title.ng-hide-add, .card-title.ng-hide-remove {
