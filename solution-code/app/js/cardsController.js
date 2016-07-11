@@ -11,7 +11,7 @@ angular.module('FlashCards')
         }
     };
 
-    $http.get('https://shielded-forest-41789.herokuapp.com/api/flashcards')
+    $http.get('https://sleepy-peak-78955.herokuapp.com/api/flashcards')
       .success(function(response){
         for(var i = 0; i < response.length; i++)
         {
