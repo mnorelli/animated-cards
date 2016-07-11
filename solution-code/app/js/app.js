@@ -1,1 +1,1 @@
-angular.module('CardsAgainstAssembly', []);
+angular.module('FlashCards', ['ngAnimate']);

@@ -1,4 +1,4 @@
-angular.module('CardsAgainstAssembly')
+angular.module('FlashCards')
 .directive('card', function cardView(){
     return { 
         restrict: "E",
@@ -7,7 +7,6 @@ angular.module('CardsAgainstAssembly')
             question: '@',
             answer: '@',
             answerHidden: '@',
-            'swapMe':'&swapMe',
             'hideMe':'&hideMe'
         }
     };

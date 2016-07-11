@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang='en' ng-app="CardsAgainstAssembly">
+<html lang='en' ng-app="FlashCards">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cards Against Assembly™</title>
+        <title>FlashCards</title>
         <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,13 +11,13 @@
     <body>
       <div class="container">
         <header class='navbar'>
-          <h1 class='pull-left'>Cards Against Assembly</h1>
+          <h1 class='pull-left'>FlashCards</h1>
         </header>
 
         <section id="cards" class='container-fluid' ng-controller="cardsController as cards">
           <div class='row'>
-            <div class='col-sm-6 col-md-6 col-lg-4' ng-repeat="card in cards.all">
-              <card class="card" question="{{card.question}}" answer="{{card.answer}}" ng-click="swapMe()"></card>
+            <div class='col-sm-6 col-md-6 col-lg-4' ng-repeat="card in cards">
+              <card class="card" question="{{card.question}}" answer="{{card.answer}}" ng-click="hideMe()"></card>
             </div>
           </div>
         </section>

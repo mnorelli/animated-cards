@@ -1,5 +1,5 @@
-angular.module('CardsAgainstAssembly', ['ngAnimate'])
-.directive("hideMe", function($animate){
+angular.module('FlashCards')
+.directive("hideMe", ['ngAnimate', function($animate){
     return function(scope, element, attrs){
             scope.$watch(attrs.hideMe, function(){
                 if(attrs.hideMe){
@@ -9,4 +9,4 @@ angular.module('CardsAgainstAssembly', ['ngAnimate'])
                 }
         });
     };
-});
+}]);
