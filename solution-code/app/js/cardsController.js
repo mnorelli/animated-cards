@@ -11,7 +11,7 @@ angular.module('FlashCards')
         }
     };
 
-    $http.get('https://sleepy-peak-78955.herokuapp.com/api/flashcards')
+    $http.get('http://localhost:3000/api/v1/cards')
       .success(function(response){
         for(var i = 0; i < response.length; i++)
         {
